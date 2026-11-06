@@ -8,3 +8,6 @@
 
 ## Part 5 Prediction
 1. I expect the accuracy to be about 10% at w = 0. It will then jump at w = 1 and keep rising until it plateaus around w = 3-4. The FID should be lowest around w = 1-2 then rise at w = 3-4. Images will get exaggerated and less varied, and FID's spread term will punish that. FID_class will probably improve a little at first as the images match their class better but get worse at a higher w for the same reason.
+
+## Part 6 Prediction
+1. Since the network memorized images of each class, even w = 1 may already give a high accuracy so w > 1 helps less than in part 5.
