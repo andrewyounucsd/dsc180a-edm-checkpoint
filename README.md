@@ -25,6 +25,8 @@ The notebooks download everything on the first run.
 ## Reproducing each figure and table
 Run the notebooks top to bottom on a GPU (make sure Quick = False). Figures are saved to the figures folder and numbers are saved to the results folder.
 
+| Result | Notebook and section | Output |
+|---|---|---|
 | Unconditional sample grid | `cifar10_edm_lab.ipynb`, part 1 | `figures/samples_uncond.png` |
 | Conditional samples, one row per class | part 2 | `figures/samples_cond.png` |
 | Trajectories: conditional (w = 1) and CFG (w = 4), class cat, seed 3 | part 3, "Your turn" cell | `figures/trajectory_cond_w1.png`, `figures/trajectory_cfg_w4.png` |
