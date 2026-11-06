@@ -32,3 +32,17 @@ Since the network memorized images of each class, even w = 1 may already give a 
 ## Part 6
 Across the snapshots, FID rises as training goes on (100 images: 75 -> 110, 1,000 images: 94 -> 133) even though the loss falls. The model memorizes its small training set, so its samples become copies of a few images and match CIFAR-10's variety worse.
 My prediction was half right. The 100-image model was already at 93% at w = 1 (100% at w = 2), so guidance had little left to add. But the 1,000-image model went from 40% at w = 1 to 86% at w = 4 which is a much bigger jump than in part 5 (95.5% → ~99%). Guidance helps most when the model’s conditional estimate is weak.
+
+## MNIST Prediction
+At w = 0 the request is ignored, so accuracy should be about 10%. It should jump at w = 1 and be close to 100% by w = 2–4 since digits are much easier to tell apart than CIFAR-10 classes. FID should be best around w = 1 and get worse at w = 4 as stronger guidance makes digits thicker, bolder and more alike, like the CIFAR sweep in part 5.
+
+## MNIST CFG network
+| w | accuracy | FID (1,000 images, classifier features) |
+|---|---|---|
+| real digits | – | 19.19 |
+| 0 | 10.5% | 136.01 |
+| 1 | 97.4% | 22.56 |
+| 2 | 100% | 91.31 |
+| 4 | 100% | 220.49 |
+
+w = 1 is the best as FID close to real digits. Larger w reaches 100% accuracy but digits get thick and uniform, so FID rises steeply. w = 0 is poor because the unconditional mode only trained on 10% of examples,  unlike CIFAR where w = 0 came from a separate unconditional network trained on all the data.

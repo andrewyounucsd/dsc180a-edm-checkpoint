@@ -36,4 +36,4 @@ Run the notebooks top to bottom on a GPU (make sure Quick = False). Figures are 
 | MNIST CFG: loss, sample grid, accuracy and FID vs w | `mnist_cfg_train.ipynb` (run the first 3 cells of `guidance_mnist.ipynb` first) | `figures/mnist_00.png`–`mnist_02.png`, `results/mnist_cfg_n1000.json` |
 
 ## AI Contribution
-AI was used to help generate code to save figures directly from the notebook into the figures folder along with creating the "Reproducing each figure and table" portion of the README.
+AI was used to help generate code to save figures directly from the notebook into the figures folder along with creating the "Reproducing each figure and table" portion of the README. AI was also used to help create mnist_cfg_train.ipynb.
