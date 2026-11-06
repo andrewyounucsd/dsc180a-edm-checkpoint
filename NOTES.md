@@ -46,3 +46,8 @@ At w = 0 the request is ignored, so accuracy should be about 10%. It should jump
 | 4 | 100% | 220.49 |
 
 w = 1 is the best as FID close to real digits. Larger w reaches 100% accuracy but digits get thick and uniform, so FID rises steeply. w = 0 is poor because the unconditional mode only trained on 10% of examples,  unlike CIFAR where w = 0 came from a separate unconditional network trained on all the data.
+
+## Full EDM run 
+Trained EDM's unconditional network on all 50,000 images for about 1.5 h (0.55M images) before the server stopped.
+Loss 1.0 -> 0.22, FID 412 -> 109. Unlike part 6, FID falls. With the full dataset the model learns to make new
+images instead of copying. Still far above the pretrained model's 31.2, as expected.

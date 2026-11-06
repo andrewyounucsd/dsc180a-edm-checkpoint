@@ -34,6 +34,7 @@ Run the notebooks top to bottom on a GPU (make sure Quick = False). Figures are 
 | Samples next to nearest training images | part 6, "Is it memorization?" | `figures/part6_03.png`, `figures/part6_04.png` |
 | CFG grids with my trained network | part 6, "The effect of CFG" | `figures/part6_05.png`, `figures/part6_06.png` |
 | MNIST CFG: loss, sample grid, accuracy and FID vs w | `mnist_cfg_train.ipynb` (run the first 3 cells of `guidance_mnist.ipynb` first) | `figures/mnist_00.png`–`mnist_02.png`, `results/mnist_cfg_n1000.json` |
+| Full EDM run on all 50,000 images: loss and FID across snapshots | `cifar10_edm_lab.ipynb`, "Encouraged: an actual training run" (EDM `train.py`, ~1.5 h, 0.55M images) | `figures/full_run.png`, `results/full_run.json` |
 
 ## AI Contribution
 AI was used to help generate code to save figures directly from the notebook into the figures folder along with creating the "Reproducing each figure and table" portion of the README. AI was also used to help create mnist_cfg_train.ipynb.
