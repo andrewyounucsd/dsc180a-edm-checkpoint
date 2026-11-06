@@ -1,0 +1,14 @@
+downloads/
+outputs/
+training-runs/
+data/
+mnist_guidance_lab.py
+lab.py
+*.pt
+*.pth
+*.pkl
+*.npz
+*.zip
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
