@@ -39,4 +39,4 @@ Run the notebooks top to bottom on a GPU (make sure Quick = False). Figures are 
 | Full EDM run on all 50,000 images: loss and FID across snapshots | `cifar10_edm_lab.ipynb`, "Encouraged: an actual training run" (EDM `train.py`, ~1.5 h, 0.55M images) | `figures/full_run.png`, `results/full_run.json` |
 
 ## AI Contribution
-AI was used to help generate code to save figures directly from the notebook into the figures folder along with creating the "Reproducing each figure and table" portion of the README. AI was also used to help create mnist_cfg_train.ipynb.
+AI was used to help generate code to save figures directly from the notebook into the figures folder along with creating the "Reproducing each figure and table" portion of the README. AI was also used to help create mnist_cfg_train.ipynb. AI was also used to help some parts of the report read more concise but all ideas and concepts were given by me.
